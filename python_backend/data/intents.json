@@ -1,0 +1,7 @@
+{
+  "intents": [
+    {"tag": "greeting", "patterns": ["hi", "hello", "hey there", "good morning"], "responses": ["Hello! How can I help you today?"]},
+    {"tag": "navigation_request", "patterns": ["guide me to ece block", "where is library", "take me to rks sir's office", "navigate to canteen"], "responses": ["Sure, let's navigate to your destination!"]},
+    {"tag": "college_info", "patterns": ["what is sit", "who is the principal", "when was sit founded"], "responses": ["Siddaganga Institute of Technology was established in 1963."]}
+  ]
+}
