@@ -1,7 +1,47 @@
 {
   "intents": [
-    {"tag": "greeting", "patterns": ["hi", "hello", "hey there", "good morning"], "responses": ["Hello! How can I help you today?"]},
-    {"tag": "navigation_request", "patterns": ["guide me to ece block", "where is library", "take me to rks sir's office", "navigate to canteen"], "responses": ["Sure, let's navigate to your destination!"]},
-    {"tag": "college_info", "patterns": ["what is sit", "who is the principal", "when was sit founded"], "responses": ["Siddaganga Institute of Technology was established in 1963."]}
+    {
+      "tag": "greeting",
+      "patterns": ["hi", "hello", "hey", "good morning", "good evening"],
+      "responses": ["Hello! How can I help you today?", "Hi there — what can I do for you?"]
+    },
+
+    {
+      "tag": "college_foundation",
+      "patterns": ["when was sit founded", "when was siddaganga institute of technology founded", "what year was sit established"],
+      "responses": ["Siddaganga Institute of Technology was established in 1963."]
+    },
+
+    {
+      "tag": "principal_info",
+      "patterns": ["who is the principal", "who is the principal of sit", "principal name", "who leads the college"],
+      "responses": ["The principal of Siddaganga Institute of Technology is Prof. X Y."] 
+      
+    },
+
+    {
+      "tag": "navigation_request",
+      "patterns": [
+        "guide me to ece block",
+        "where is library",
+        "take me to rks sir's office",
+        "navigate to canteen",
+        "how do i reach ecl 301",
+        "directions to ecl 301"
+      ],
+      "responses": ["Sure — I can help you navigate. Tap Navigate to start the AR guidance."]
+    },
+
+    {
+      "tag": "thanks",
+      "patterns": ["thanks", "thank you", "thx"],
+      "responses": ["You're welcome!", "Happy to help!"]
+    },
+
+    {
+      "tag": "fallback",
+      "patterns": [],
+      "responses": ["Sorry, I didn't understand that. Could you rephrase or ask something else?"]
+    }
   ]
 }
