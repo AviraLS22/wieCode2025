@@ -24,7 +24,8 @@ def get_response(user_input):
         if intent["tag"] == intent_tag:
             return jsonify({
                 "intent": intent_tag,
-                "response": intent["responses"][0]
+                "response": intent["responses"][0],
+                "entity": intent["entity"]
             })
     return jsonify({"intent": "unknown", "response": "Sorry, I didn’t understand that."})
 
