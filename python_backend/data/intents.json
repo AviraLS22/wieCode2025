@@ -3,19 +3,23 @@
     {
       "tag": "greeting",
       "patterns": ["hi", "hello", "hey", "good morning", "good evening"],
+      "entity":["greet"],
       "responses": ["Hello! How can I help you today?", "Hi there — what can I do for you?"]
     },
 
     {
       "tag": "college_foundation",
       "patterns": ["when was sit founded", "when was siddaganga institute of technology founded", "what year was sit established"],
+      "entity":["college founded"],
       "responses": ["Siddaganga Institute of Technology was established in 1963."]
     },
 
     {
       "tag": "principal_info",
       "patterns": ["who is the principal", "who is the principal of sit", "principal name", "who leads the college"],
+      "entity":["principal"],
       "responses": ["The principal of Siddaganga Institute of Technology is Prof. X Y."] 
+      
       
     },
 
